@@ -25,7 +25,6 @@ html {
 h1 {
     text-align: center;
     font-family: "Raleway", sans-serif;
-    animation: fadeIn 2s ease-in-out;
 }
 
 a {
@@ -64,34 +63,25 @@ a {
     color: darkblue;
     margin-top: 0;
     margin-bottom: 1rem;
-    animation: fadeIn 1s ease-in-out;
-
   }
 
   h3 {
     color: darkblue;
     margin-top: 0;
     margin-bottom: 1rem;
-    animation: fadeIn 1s ease-in-out;
-
   }
   
   p {
     margin-bottom: 1rem;
-    animation: fadeIn 1s ease-in-out;
-
   }
   
   ul {
     list-style-type: none;
     padding: 0;
-    animation: fadeIn 1s ease-in-out;
-
   }
   
   li {
     margin-bottom: 0.5rem;
-    animation: fadeIn 1s ease-in-out;
   }
   
   footer {
@@ -114,7 +104,6 @@ a {
     display: flex;
     align-items: flex-start;
     padding: 10px;
-    animation: fadeIn 1s ease-in-out;
 }
   .box {
     width: auto;
@@ -123,22 +112,16 @@ a {
     margin: 10px;
     overflow: auto;
     background-color: white;
-    animation: fadeIn 1s ease-in-out;
-
   }
   .flex-container {
     display: flex; 
     flex-flow: column wrap; 
     background-color: none; 
-    animation: fadeIn 1s ease-in-out;
-
   }
 #start {
     text-align: center;
     font-size: larger;
     border: none;
-    animation: fadeIn 1s ease-in-out;
-
 }
 
 .center {
@@ -170,8 +153,6 @@ a {
     font-size: 20px;
     justify-self: center;
     display: inline-block;
-    animation: fadeIn 1s ease-in-out;
-
   }
 
   .spacemake {
@@ -188,8 +169,6 @@ a {
   float: left;
   margin: 10px;
   padding: 0px;
-  animation: fadeIn 1s ease-in-out;
-
   }
 
   .source {
@@ -226,4 +205,34 @@ a {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+}
+
+/* Mobilvennlig layout */
+@media (max-width: 768px) {
+  .center {
+    width: 90%; /* Øk bredden til 90% for å passe bedre på små skjermer */
+  }
+
+  .boximagewide {
+    width: 100%; /* Bildene vil fylle hele bredden på mindre skjermer */
+    height: auto; /* Bevar bildets proporsjoner */
+  }
+
+  .box {
+    padding: 10px;
+  }
+}
+
+.nav-button {
+  background-color: darkblue;
+  color: white;
+  padding: 3px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: lightblue;
 }
