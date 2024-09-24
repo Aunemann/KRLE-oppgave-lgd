@@ -225,3 +225,28 @@ a {
   background: blue;
   border-radius: 0px;
 }
+
+@media (max-width: 768px) {
+  .box {
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .source p, .source a {
+    font-size: 14px;
+  }
+}
+
+.nav-button {
+  background-color: darkblue;
+  color: white;
+  padding: 3px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: lightblue;
+}
