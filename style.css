@@ -223,6 +223,19 @@ a {
   }
 }
 
+nav {
+  background-color: #103764;
+  color: #fff;
+  padding: 4px;
+  text-align: center;
+  font-size: 12px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .nav-button {
   background-color: darkblue;
   color: white;
